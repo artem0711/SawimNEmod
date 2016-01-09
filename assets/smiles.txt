@@ -1,50 +1,50 @@
 60
-"Smile"      :-), :), =), =))
-"Sad"        :-(, :(, =(, =((
-"Ironic"     ;-), ;)
-"Tongue"     :-P, :P, :-p, :p
-"Boss"       8-)
-"Xa-xa"        :-D, :D, =-D, =-d, :d, =d, :-d
-"Confusion"  :-[, :[, =-[, =[
-"Angel"      O:-)
-"Shock"      =-O, =O, :-O, :O, =-o, =o, :-o, :o
-"Kiss"       :-*, :*, =-*, =*, :-{}
-"Sob"        :'(, ='(
+"Smile"      :-), :), =)), =), +), *GIGGLING*, *giggling*, :smile:
+"Sad"        :-(, :(, =((, =(, *SAD*, *sad*, :SAD:, :sad:, ((((, (((, ((
+"Ironic"     ;-), ;), :wink:
+"Tongue"     :-P, :P, :p , :-p, =P
+"Boss"       8-), B-)
+"Xa-xa"        :-D, =-D, =D, =-d, =d, :-d, xDDD, xDD, xD, XD, *BIG_SMILE*, *big_smile*, :BIGGRIN:, :biggrin:, *BIGGRIN*, *LAUGH*
+"Confusion"  :-[, :[, =-[, =[, :'), :'-), ='), (E), (e), *blush*
+"Angel"      O:-), o:-), 0:-), 0:), O=), O+), 0=), 0+), (A), (a)
+"Shock"      =-O, =O, :-O, :O, =-o, =o, :-o, :o, =:-O, =:-o, :-0
+"Kiss"       :-*, :*, =-*, =*, :-{}, ={|}, :{}, *ZASOS*, *KISS*
+"Sob"        :'(, ='(, :'-(, *CRY*, ;-(, ;(
 "Shut up"    :-X, :X, :-x, :x
-"Angry"      >:o, >=o, >:O, >=O
+"Angry"      >:o, >=o, >:O, >=O, *VGLAZ*
 "Stupid"     :-|, :|, =-|, =|
-"Suspirious" :-\, =-\, =\, :-/, =-/, =/
-"Jokingly"   *JOKINGLY*, *jokingly*
-"Devil"      ]:->, ]:>, ]=->, ]=>
-"Music"      [:-}, [:}, [=-}, [=}
-"Kissed"     *KISSED*, *kissed*
+"Suspirious" :-\, =-\, =\, :-/, =-/, =/, *HM*, *hm*, :HM:, :hm:
+"Jokingly"   *JOKINGLY*, *jokingly*, :o), :JOKINGLY:, :jokingly:
+"Devil"      ]:->, ]:>, ]=->, ]=>, *DIABOLO*, :diabolo:, *DEVIL*
+"Music"      [:-}, [:}, [=-}, [=}, *MUSIC*, *music*, :MUSIC:
+"Kissed"     *KISSED*, *kissed*, :"), :-")
 "Illness"    :-!, :!, =-!, =!
 "Tired"      *TIRED*, *tired*
-"Stop"       *STOP*, *stop*
-"Kissing"    *KISSING*, *kissing*
-"Rose"       @}->--
-"Thumbs up"  *THUMBS UP*, *thumbs up*
-"Beer"       *DRINK*, *drink*
-"In love"    *IN LOVE*, *in love*
+"Stop"       *STOP*, *stop*, :STOP:, STOP
+"Kissing"    *KISSING*, *kissing*, :KISSING:
+"Rose"       @}->--, @}->-, @};--, *BOUQUET*
+"Thumbs up"  *THUMBS UP*, *thumbs up*, *THUMBS_UP*, :THUMBS_UP:, *GOOD*
+"Beer"       *DRINK*, *drink*, :DRINK:, :drink:, (B), (b), :BEER:, :beer:, *BEER*, *beer*
+"In love"    *IN LOVE*, *in love*, :IN LOVE:, *IN_LOVE*, (L), (l), *HEART*, *heart*, <3, *LOVE*
 "Bomb"       @=
-"Indefinite" *HELP*, *help*
+"Indefinite" *HELP*, *help*, *SOS*, :SOS:, :help:, (help), *HELP_ME*
 "Snooty"     \m/, \M/
-"Crazy"      %)
-"OK"         *OK*, *ok*
+"%)"      %)
+"OK"         *OK*, *ok*, (OK), (ok)
 "Wass up"    *WASSUP*, *wassup*
-"Sorry"      *SORRY*, *sorry*
+"Sorry"      *SORRY*, *sorry*, :SORRY:
 "Bravo"      *BRAVO*, *bravo*
-"Rofl"       *ROFL*, *rofl*, :lol:
+"Rofl"       *ROFL*, *rofl*, :lol:, :LOL:, *LOL*, *lol*, LOL, lol, *ROTFL*, ROTFL, ROFL
 "Pardon"     *PARDON*, *pardon*
-"No"         *NO*, *no*
-"Crazy"      *CRAZY*, *crazy*
-"Dont know"  *DONT KNOW*, *dont know*, *DONT_KNOW*, *dont_know*
+"No"         *NO*, *no*, :NO:, :no:, :-S, :-s
+"Crazy"      *CRAZY*, *crazy*, :crazy:
+"Dont know"  *DONT KNOW*, *dont know*, *DONT_KNOW*, *dont_know*, *dntknw*, :dntknw:, *UNKNOWN*
 "Dance"      *DANCE*, *dance*
-"Yahoo"      *YAHOO*, *yahoo*
-"Hi"         *HI*, *hi*
-"BYE"        *BYE*, *bye*
-"YES"        *YES*, *yes*
-";D"         ;D
-"WALL"       *WALL*, *wall*
-"WRITE"      *WRITE*, *write*
-"SCRATCH"    *SCRATCH*, *scratch*
+"Yahoo"      *YAHOO*, *yahoo*, *HISTERICS*, *HYSTERICS*, *HYSTERIC*, *HISTERIC*, *истерика*
+"Hi"         *HI*, *hi*, *PREVED*, *PRIVET*, *HELLO*, *hello*, :HELLO:, :hello:
+"BYE"        *BYE*, *bye*, :bye:, :BYE:
+"YES"        *YES*, *yes*, :YES:, :yes:, *TENDER*
+";D"         ;D, ;-D
+"WALL"       *WALL*, *wall*, :WALL:, *DASH*
+"WRITE"      *WRITE*, *write*, :WRITE:, :write:
+"SCRATCH"    *SCRATCH*, *scratch*, *SCLEROSIS*
