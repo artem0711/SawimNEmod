@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Sawim NE</string>
+    <string name="app_name">Sawim NE+</string>
     <string name="unread_messages">Unread messages: %d</string>
     <string name="takePhotoButton">OK</string>
     <string name="offline">Offline</string>
@@ -528,4 +528,12 @@
     <string name="new_subject">New subject</string>
     <string name="conference_theme">Conference theme</string>
     <string name="message_from">Message from</string>
+    <string name="cp1251">Win1251 code page</string>
+    <string name="contact_jid">JID</string>
+    <string name="ext_add">Extended address</string>
+    <string name="postcode">Post Code</string>
+    <string name="country">Country</string>
+    <string name="minimize">Minimize</string>
+    <string name="ticker_system">Ticker</string>
+    <string name="outcast">Outcast</string>
 </resources>

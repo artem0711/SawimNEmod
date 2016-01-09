@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Sawim NE</string>
+    <string name="app_name">Sawim NE+</string>
     <string name="unread_messages">Новых сообщений: %d</string>
     <string name="takePhotoButton">OK</string>
     <string name="offline">Отключен</string>
@@ -315,6 +315,7 @@
     <string name="color_scheme">Цветовая схема</string>
     <string name="commands">Команды</string>
     <string name="complete">Завершено</string>
+    <string name="contact_jid">JID</string>
     <string name="contacts_with_msg_at_top">Контакты с сообщениями в начале</string>
     <string name="copy_text">Копировать</string>
     <string name="copy_all_text">Копировать всё</string>
@@ -530,4 +531,13 @@
     <string name="new_subject">Новая тема</string>
     <string name="conference_theme">Тема конференции</string>
     <string name="message_from">Сообщение от</string>
+    <string name="back_button_label"></string>
+    <string name="country">Страна</string>
+    <string name="days">дн</string>
+    <string name="ext_add">Продолжение адреса</string>
+    <string name="minutes">мин.</string>
+    <string name="next_button_label">След.</string>
+    <string name="postcode">Индекс</string>
+    <string name="skip_button_label">Пропуск</string>
+    <string name="push">Толкни</string>
 </resources>

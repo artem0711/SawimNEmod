@@ -26,6 +26,10 @@ public class EditInfo implements FormListener {
     private static final int _WorkPositionItem = 1013;
     private static final int _WorkPhoneItem = 1014;
     private static final int _AboutItem = 1015;
+    private static final int _ContactJID = 1016;
+    private static final int _ExtAddr = 1017;
+    private static final int _PostalCode = 1018;
+    private static final int _Country = 1019;
     private Forms form;
     private Protocol protocol;
     private UserInfo userInfo;
@@ -42,17 +46,15 @@ public class EditInfo implements FormListener {
         form.addTextField(_NickNameItem, R.string.nick, userInfo.nick);
         form.addTextField(_FirstNameItem, R.string.firstname, userInfo.firstName);
         form.addTextField(_LastNameItem, R.string.lastname, userInfo.lastName);
-
-        if (!isXmpp) {
-            int[] sexItem = {-1, R.string.female, R.string.male};
-            form.addSelector(_SexItem, R.string.gender, sexItem, userInfo.gender);
-        }
+        int[] sexItem = {-1, R.string.female, R.string.male};
+        form.addSelector(_SexItem, R.string.gender, sexItem, userInfo.gender);
 
         form.addTextField(_BdayItem, R.string.birth_day, userInfo.birthDay);
 
         if (isXmpp) {
             form.addTextField(_EmailItem, R.string.email, userInfo.email);
             form.addTextField(_CellPhoneItem, R.string.cell_phone, userInfo.cellPhone);
+            form.addTextField(_ContactJID, R.string.contact_jid, userInfo.contactjid);
         }
 
         form.addTextField(_HomePageItem, R.string.home_page, userInfo.homePage);
@@ -61,10 +63,16 @@ public class EditInfo implements FormListener {
 
         if (isXmpp) {
             form.addTextField(_AddrItem, R.string.addr, userInfo.homeAddress);
+            form.addTextField(_ExtAddr, R.string.ext_add, userInfo.homeExtended);
         }
 
         form.addTextField(_CityItem, R.string.city, userInfo.homeCity);
         form.addTextField(_StateItem, R.string.state, userInfo.homeState);
+
+        if (isXmpp) {
+            form.addTextField(_PostalCode, R.string.postcode, userInfo.homePostal);
+            form.addTextField(_Country, R.string.country, userInfo.homeCountry);
+        }
 
         form.addHeader(R.string.work_info);
         form.addTextField(_WorkCompanyItem, R.string.title, userInfo.workCompany);
@@ -102,17 +110,23 @@ public class EditInfo implements FormListener {
             if (isXmpp) {
                 userInfo.email = form.getTextFieldValue(_EmailItem);
                 userInfo.cellPhone = form.getTextFieldValue(_CellPhoneItem);
+                userInfo.contactjid = form.getTextFieldValue(_ContactJID);
             }
 
             userInfo.firstName = form.getTextFieldValue(_FirstNameItem);
             userInfo.lastName = form.getTextFieldValue(_LastNameItem);
             if (!isXmpp) {
                 userInfo.gender = (byte) form.getSelectorValue(_SexItem);
+            } else {
+                userInfo.xmpp_gender = form.getSelectorString(_SexItem);
             }
             userInfo.homePage = form.getTextFieldValue(_HomePageItem);
 
             if (isXmpp) {
                 userInfo.homeAddress = form.getTextFieldValue(_AddrItem);
+                userInfo.homeExtended = form.getTextFieldValue(_ExtAddr);
+                userInfo.homePostal = form.getTextFieldValue(_PostalCode);
+                userInfo.homeCountry = form.getTextFieldValue(_Country);
             }
 
             userInfo.homeCity = form.getTextFieldValue(_CityItem);

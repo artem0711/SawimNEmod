@@ -45,7 +45,8 @@ public class UserInfo implements PhotoListener, FileBrowserListener {
     public final String realUin;
 
     public String localName, uin, nick, email, homeCity, firstName, lastName, homeState, homePhones, homeFax, homeAddress, cellPhone, homePage,
-            interests, about, workCity, workState, workPhone, workFax, workAddress, workCompany, workDepartment, workPosition, birthDay;
+            interests, about, workCity, workState, workPhone, workFax, workAddress, workCompany, workDepartment, workPosition, birthDay,
+            contactjid, xmpp_gender, homeExtended, homePostal, homeCountry;
     public int age;
     public byte gender;
     public boolean auth;
@@ -139,6 +140,7 @@ public class UserInfo implements PhotoListener, FileBrowserListener {
     }
 
     private void updateProfileView(VirtualListModel profile) {
+        final boolean isXmpp = (protocol instanceof protocol.xmpp.Xmpp);
         profile.clear();
 
         profile.setHeader(R.string.main_info);
@@ -148,7 +150,11 @@ public class UserInfo implements PhotoListener, FileBrowserListener {
 
         profile.addParam(R.string.nick, nick);
         profile.addParam(R.string.name, getName());
-        profile.addParam(R.string.gender, getGenderAsString());
+        if (isXmpp) {
+            profile.addParam(R.string.gender, xmpp_gender);
+        } else {
+            profile.addParam(R.string.gender, getGenderAsString());
+        }
         if (0 < age) {
             profile.addParam(R.string.age, Integer.toString(age));
         }
@@ -159,15 +165,30 @@ public class UserInfo implements PhotoListener, FileBrowserListener {
         profile.addParam(R.string.birth_day, birthDay);
         profile.addParam(R.string.cell_phone, cellPhone);
         profile.addParam(R.string.home_page, homePage);
+        if (isXmpp) {
+            profile.addParam(R.string.contact_jid, contactjid);
+        }
         profile.addParam(R.string.interests, interests);
         profile.addParam(R.string.notes, about);
 
         profile.setHeader(R.string.home_info);
         profile.addParam(R.string.addr, homeAddress);
+
+        if (isXmpp) {
+            profile.addParam(R.string.ext_add, homeExtended);
+        }
+
         profile.addParam(R.string.city, homeCity);
         profile.addParam(R.string.state, homeState);
+
+        if (isXmpp) {
+            profile.addParam(R.string.postcode, homePostal);
+            profile.addParam(R.string.country, homeCountry);
+        }
+
         profile.addParam(R.string.phone, homePhones);
         profile.addParam(R.string.fax, homeFax);
+
 
         profile.setHeader(R.string.work_info);
         profile.addParam(R.string.title, workCompany);

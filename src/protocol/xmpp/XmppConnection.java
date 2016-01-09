@@ -987,8 +987,11 @@ public final class XmppConnection extends ClientConnection {
         userInfo.vCard.setValue("TEL", new String[]{"HOME", "VOICE"}, "NUMBER", userInfo.cellPhone);
 
         userInfo.vCard.setValue("ADR", new String[]{"HOME"}, "STREET", userInfo.homeAddress);
+        userInfo.vCard.setValue("ADR", new String[]{"HOME"}, "EXTADR", userInfo.homeExtended);
         userInfo.vCard.setValue("ADR", new String[]{"HOME"}, "LOCALITY", userInfo.homeCity);
         userInfo.vCard.setValue("ADR", new String[]{"HOME"}, "REGION", userInfo.homeState);
+        userInfo.vCard.setValue("ADR", new String[]{"HOME"}, "PCODE", userInfo.homePostal);
+        userInfo.vCard.setValue("ADR", new String[]{"HOME"}, "CTRY", userInfo.homeCountry);
 
         userInfo.vCard.setValue("TEL", new String[]{}, "NUMBER", "");
         userInfo.vCard.setValue("TEL", new String[]{"WORK", "VOICE"}, "NUMBER", userInfo.workPhone);
@@ -996,6 +999,7 @@ public final class XmppConnection extends ClientConnection {
         userInfo.vCard.setValue("ORG", null, "ORGUNIT", userInfo.workDepartment);
         userInfo.vCard.setValue("TITLE", userInfo.workPosition);
         userInfo.vCard.setValue("DESC", userInfo.about);
+        userInfo.vCard.setValue("GENDER", userInfo.xmpp_gender);
         userInfo.vCard.cleanXmlTree();
 
         StringBuffer packet = new StringBuffer();
@@ -1038,15 +1042,20 @@ public final class XmppConnection extends ClientConnection {
             name[2] = null;
             userInfo.firstName = Util.implode(name, " ");
         }
+        userInfo.xmpp_gender = vCard.getFirstNodeValue("GENDER");
         userInfo.nick = vCard.getFirstNodeValue("NICKNAME");
         userInfo.birthDay = vCard.getFirstNodeValue("BDAY");
+        userInfo.contactjid = vCard.getFirstNodeValue("JABBERID");
         userInfo.email = vCard.getFirstNodeValue("EMAIL", new String[]{"INTERNET"}, "USERID", true);
         userInfo.about = vCard.getFirstNodeValue("DESC");
         userInfo.homePage = vCard.getFirstNodeValue("URL");
 
         userInfo.homeAddress = vCard.getFirstNodeValue("ADR", new String[]{"HOME"}, "STREET", true);
+        userInfo.homeExtended = vCard.getFirstNodeValue("ADR", new String[]{"HOME"}, "EXTADR", true);
         userInfo.homeCity = vCard.getFirstNodeValue("ADR", new String[]{"HOME"}, "LOCALITY", true);
         userInfo.homeState = vCard.getFirstNodeValue("ADR", new String[]{"HOME"}, "REGION", true);
+        userInfo.homePostal = vCard.getFirstNodeValue("ADR", new String[]{"HOME"}, "PCODE", true);
+        userInfo.homeCountry = vCard.getFirstNodeValue("ADR", new String[]{"HOME"}, "CTRY", true);
         userInfo.cellPhone = vCard.getFirstNodeValue("TEL", new String[]{"HOME", "VOICE"}, "NUMBER", true);
 
         userInfo.workCompany = vCard.getFirstNodeValue("ORG", null, "ORGNAME");
@@ -1261,7 +1270,9 @@ public final class XmppConnection extends ClientConnection {
                 if (null != realJid) {
                     conf.setRealJid(fromRes, Jid.getBareJid(realJid));
                 }
+
                 contact.setClient(fromRes, x.getFirstNodeAttribute("c", S_NODE));
+
                 if (303 == code) {
                     conf.addPresence(getXmpp(), fromRes, ": " + JLocale.getString(R.string.change_nick) + " " + StringConvertor.notNull(newNick));
                 }
