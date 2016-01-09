@@ -318,21 +318,24 @@ public final class ChatHistory {
             s.open();
             for (int i = getTotal() - 1; 0 <= i; --i) {
                 Chat chat = chatAt(i);
-                int unreadMessageCount = chat.getUnreadMessageCount();
-                if (unreadMessageCount == 0 && !Options.getBoolean(Options.OPTION_HISTORY)) {
-                    HistoryStorage historyStorage = chat.getHistory();
-                    boolean hasHistory = historyStorage != null && historyStorage.getHistorySize() > 0;
-                    if (hasHistory) {
-                        historyStorage.removeHistory();
+                Contact contact = contactAt(i);
+                if (!contact.isConference()) {
+                    int unreadMessageCount = chat.getUnreadMessageCount();
+                    if (unreadMessageCount == 0 && !Options.getBoolean(Options.OPTION_HISTORY)) {
+                        HistoryStorage historyStorage = chat.getHistory();
+                        boolean hasHistory = historyStorage != null && historyStorage.getHistorySize() > 0;
+                        if (hasHistory) {
+                            historyStorage.removeHistory();
+                        }
                     }
-                }
-                if (unreadMessageCount > 0) {
-                    ByteArrayOutputStream out = new ByteArrayOutputStream();
-                    DataOutputStream o = new DataOutputStream(out);
-                    o.writeUTF(chat.getProtocol().getUserId());
-                    o.writeUTF(chat.getContact().getUserId());
-                    o.writeShort(unreadMessageCount);
-                    s.addRecord(out.toByteArray());
+                    if (unreadMessageCount > 0) {
+                        ByteArrayOutputStream out = new ByteArrayOutputStream();
+                        DataOutputStream o = new DataOutputStream(out);
+                        o.writeUTF(chat.getProtocol().getUserId());
+                        o.writeUTF(chat.getContact().getUserId());
+                        o.writeShort(unreadMessageCount);
+                        s.addRecord(out.toByteArray());
+                    }
                 }
             }
         } catch (Exception e) {
