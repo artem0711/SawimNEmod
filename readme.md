@@ -1,9 +1,4 @@
-SawimNE
+SawimNE mod
 =========
 
-Mobile IM client
-
-[![Build Status][1]][2]
-
-[1]: https://travis-ci.org/gerc99/SawimNE.png
-[2]: https://travis-ci.org/gerc99/SawimNE
+Mobile IM client based on SawimNE 38
