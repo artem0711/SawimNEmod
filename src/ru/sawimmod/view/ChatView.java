@@ -318,6 +318,7 @@ public class ChatView extends SawimFragment implements OnUpdateChat, Handler.Cal
         }
         messageEditor.setSingleLine(false);
         messageEditor.setMaxLines(4);
+        messageEditor.setTextSize(SawimApplication.getFontSize());
         messageEditor.setHorizontallyScrolling(false);
         messageEditor.setInputType(InputType.TYPE_CLASS_TEXT
                 | InputType.TYPE_TEXT_FLAG_MULTI_LINE
