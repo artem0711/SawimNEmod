@@ -14,6 +14,10 @@ import ru.sawimmod.modules.search.Search;
 import ru.sawimmod.modules.search.UserInfo;
 import ru.sawimmod.roster.ProtocolBranch;
 import ru.sawimmod.roster.RosterHelper;
+import ru.sawimmod.Options;
+import ru.sawimmod.SawimApplication;
+import ru.sawimmod.SawimException;
+import ru.sawimmod.SawimNotification;
 
 import java.io.*;
 import java.util.Vector;

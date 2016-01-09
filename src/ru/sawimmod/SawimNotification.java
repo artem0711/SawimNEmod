@@ -7,7 +7,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.support.v4.app.NotificationCompat;
-import android.util.Log;
+
+import ru.sawimmod.R;
 import ru.sawimmod.activities.SawimActivity;
 import ru.sawimmod.chat.ChatHistory;
 import ru.sawimmod.comm.JLocale;

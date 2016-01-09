@@ -9,7 +9,6 @@
 
 package protocol.xmpp;
 
-import android.content.Context;
 import protocol.net.TcpSocket;
 import ru.sawimmod.SawimException;
 import ru.sawimmod.modules.DebugLog;

@@ -2,6 +2,8 @@ package ru.sawimmod;
 
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
+
+import ru.sawimmod.R;
 import ru.sawimmod.icons.ImageList;
 
 /**

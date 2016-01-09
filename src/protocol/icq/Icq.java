@@ -6,7 +6,6 @@ import protocol.icq.packet.Packet;
 import protocol.icq.packet.SnacPacket;
 import protocol.icq.packet.ToIcqSrvPacket;
 import protocol.icq.plugin.XtrazMessagePlugin;
-import ru.sawimmod.Options;
 import ru.sawimmod.R;
 import ru.sawimmod.activities.BaseActivity;
 import ru.sawimmod.chat.message.PlainMessage;

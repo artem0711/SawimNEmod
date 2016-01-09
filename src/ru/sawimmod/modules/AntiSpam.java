@@ -6,7 +6,6 @@ import protocol.Contact;
 import protocol.Protocol;
 import ru.sawimmod.Options;
 import ru.sawimmod.chat.message.Message;
-import ru.sawimmod.chat.message.PlainMessage;
 import ru.sawimmod.chat.message.SystemNotice;
 import ru.sawimmod.comm.StringConvertor;
 import ru.sawimmod.comm.Util;

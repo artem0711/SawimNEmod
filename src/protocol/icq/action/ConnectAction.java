@@ -7,7 +7,6 @@ import protocol.icq.Icq;
 import protocol.icq.IcqContact;
 import protocol.icq.PrivacyItem;
 import protocol.icq.packet.*;
-import ru.sawimmod.Options;
 import ru.sawimmod.SawimException;
 import ru.sawimmod.comm.ArrayReader;
 import ru.sawimmod.comm.StringConvertor;

@@ -1,14 +1,12 @@
 package ru.sawimmod;
 
-import protocol.Protocol;
-import protocol.xmpp.Xmpp;
+import ru.sawimmod.R;
 import ru.sawimmod.activities.BaseActivity;
 import ru.sawimmod.comm.JLocale;
 import ru.sawimmod.comm.Util;
 import ru.sawimmod.models.form.ControlStateListener;
 import ru.sawimmod.models.form.Forms;
 import ru.sawimmod.modules.Answerer;
-import ru.sawimmod.roster.RosterHelper;
 
 public class OptionsForm implements ControlStateListener {
 

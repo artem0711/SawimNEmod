@@ -46,6 +46,10 @@ import ru.sawimmod.widget.MyListView;
 import ru.sawimmod.widget.MySpinner;
 import ru.sawimmod.widget.Util;
 import ru.sawimmod.widget.roster.RosterViewRoot;
+import ru.sawimmod.ExternalApi;
+import ru.sawimmod.Options;
+import ru.sawimmod.SawimApplication;
+import ru.sawimmod.Scheme;
 
 import java.io.FileNotFoundException;
 import java.io.InputStream;

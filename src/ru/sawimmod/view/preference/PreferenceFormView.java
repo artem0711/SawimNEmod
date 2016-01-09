@@ -1,6 +1,5 @@
 package ru.sawimmod.view.preference;
 
-import android.content.Context;
 import android.content.Intent;
 import android.media.RingtoneManager;
 import android.net.Uri;
@@ -9,7 +8,7 @@ import android.preference.*;
 import android.support.v4.app.FragmentTransaction;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.view.inputmethod.InputMethodManager;
+
 import ru.sawimmod.R;
 import ru.sawimmod.SawimApplication;
 import ru.sawimmod.activities.BaseActivity;

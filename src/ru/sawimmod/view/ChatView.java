@@ -57,6 +57,11 @@ import ru.sawimmod.widget.chat.ChatBarView;
 import ru.sawimmod.widget.chat.ChatInputBarView;
 import ru.sawimmod.widget.chat.ChatListsView;
 import ru.sawimmod.widget.chat.ChatViewRoot;
+import ru.sawimmod.Clipboard;
+import ru.sawimmod.Options;
+import ru.sawimmod.SawimApplication;
+import ru.sawimmod.SawimResources;
+import ru.sawimmod.Scheme;
 
 /**
  * Created with IntelliJ IDEA.

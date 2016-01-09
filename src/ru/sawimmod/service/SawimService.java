@@ -9,7 +9,6 @@ import protocol.Protocol;
 import ru.sawimmod.Options;
 import ru.sawimmod.R;
 import ru.sawimmod.SawimNotification;
-import ru.sawimmod.chat.ChatHistory;
 import ru.sawimmod.roster.RosterHelper;
 
 public class SawimService extends Service {

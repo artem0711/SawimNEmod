@@ -7,7 +7,6 @@ import ru.sawimmod.R;
 import ru.sawimmod.SawimApplication;
 import ru.sawimmod.SawimException;
 import ru.sawimmod.chat.Chat;
-import ru.sawimmod.chat.ChatHistory;
 import ru.sawimmod.chat.message.Message;
 import ru.sawimmod.chat.message.PlainMessage;
 import ru.sawimmod.chat.message.SystemNotice;
