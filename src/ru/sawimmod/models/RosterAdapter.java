@@ -249,7 +249,7 @@ public class RosterAdapter extends BaseAdapter {
 
         Icon icClient = (null != p.clientInfo) ? p.clientInfo.getIcon(item.clientIndex) : null;
         if (icClient != null && !SawimApplication.hideIconsClient)
-            rosterItemView.itemFourthImage = icClient.getImage().getBitmap();
+            rosterItemView.itemFifthImage = icClient.getImage().getBitmap();
     }
 
     public BitmapDrawable getImageChat(Chat chat, boolean showMess) {

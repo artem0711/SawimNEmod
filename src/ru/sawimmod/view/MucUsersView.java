@@ -67,7 +67,7 @@ public class MucUsersView implements TextBoxView.TextBoxListener {
                     menu.add(activity.getString(R.string.role_commands), ContactMenu.ROLE_COMMANDS);
                 AlertDialog.Builder builder = new AlertDialog.Builder(activity);
                 builder.setCancelable(true);
-                builder.setTitle(xmppServiceContact.getName());
+                builder.setTitle(nick + "@" + xmppServiceContact.getName());
                 builder.setAdapter(menu, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

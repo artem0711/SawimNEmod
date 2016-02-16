@@ -20,7 +20,7 @@
             android:lines="1"
             android:marqueeRepeatLimit="marquee_forever"
             android:scrollHorizontally="true"
-            android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaawwwwwwwwqertyuiopkjhgfc"
+            android:text="aaaaaaaaaqertyuiopkjhgfc"
             android:textSize="20sp"
             android:textStyle="bold" android:gravity="center_vertical" android:padding="10dp"/>
 </LinearLayout>

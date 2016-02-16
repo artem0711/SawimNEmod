@@ -5,6 +5,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.opengl.EGLExt;
+import android.os.Build;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
@@ -45,7 +47,7 @@ public class SawimApplication extends Application {
 
     public static String NAME;
     public static String VERSION;
-    public static final String PHONE = "Android/" + android.os.Build.MODEL
+    public static final String PHONE = "Android/" + Build.BRAND + " " + Build.MODEL
             + "/" + android.os.Build.VERSION.RELEASE;
     public static final String DEFAULT_SERVER = "jabber.ru";
 
