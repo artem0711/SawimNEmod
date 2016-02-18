@@ -45,7 +45,11 @@ public class MucUsersView implements TextBoxView.TextBoxListener {
                 chatView.hasBack();
                 if (o instanceof XmppContact.SubContact) {
                     XmppContact.SubContact c = (XmppContact.SubContact) o;
-                    chatView.insert(c.resource + ", ");
+                    if (chatView.getText().length() > 0) {
+                        chatView.insert(c.resource + " ");
+                    } else {
+                        chatView.insert(c.resource + ", ");
+                    }
                     chatView.showKeyboard();
                 }
             }
@@ -111,7 +115,7 @@ public class MucUsersView implements TextBoxView.TextBoxListener {
                     }
                 });
                 builder.create().show();
-                return false;
+                return true;
             }
         });
     }

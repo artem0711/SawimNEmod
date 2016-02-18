@@ -15,6 +15,10 @@ import android.util.DisplayMetrics;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewConfiguration;
+
+import java.util.List;
+
+import protocol.net.SrvResolver;
 import ru.sawimmod.SawimApplication;
 import ru.sawimmod.SawimResources;
 import ru.sawimmod.Scheme;

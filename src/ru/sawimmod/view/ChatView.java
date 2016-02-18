@@ -1116,7 +1116,7 @@ public class ChatView extends SawimFragment implements OnUpdateChat, Handler.Cal
         messageEditor.setText("");
     }
 
-    private String getText() {
+    public String getText() {
         return messageEditor.getText().toString();
     }
 
